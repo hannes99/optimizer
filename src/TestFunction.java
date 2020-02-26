@@ -55,7 +55,7 @@ public class TestFunction implements Optimizable {
     @Override
     public void run() {
         // -5*x*y*e^(-x^2-y^2)
-        this.value = Math.pow(parameters[0],2)+Math.pow(parameters[1],2);
+        this.value = Math.pow(getParameter(0), 3)-9*getParameter(0);
     }
 
     @Override
